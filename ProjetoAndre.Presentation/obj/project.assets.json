@@ -1,0 +1,143 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0-windows7.0": {
+      "ProjetoAndre.Aplication/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ProjetoAndre.Domain": "1.0.0",
+          "ProjetoAndre.Infrastruct": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProjetoAndre.Aplication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjetoAndre.Aplication.dll": {}
+        }
+      },
+      "ProjetoAndre.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ProjetoAndre.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjetoAndre.Domain.dll": {}
+        }
+      },
+      "ProjetoAndre.Infrastruct/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ProjetoAndre.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProjetoAndre.Infrastruct.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjetoAndre.Infrastruct.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjetoAndre.Aplication/1.0.0": {
+      "type": "project",
+      "path": "../ProjetoAndre.Aplication/ProjetoAndre.Aplication.csproj",
+      "msbuildProject": "../ProjetoAndre.Aplication/ProjetoAndre.Aplication.csproj"
+    },
+    "ProjetoAndre.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ProjetoAndre.Domain/ProjetoAndre.Domain.csproj",
+      "msbuildProject": "../ProjetoAndre.Domain/ProjetoAndre.Domain.csproj"
+    },
+    "ProjetoAndre.Infrastruct/1.0.0": {
+      "type": "project",
+      "path": "../ProjetoAndre.Infrastruct/ProjetoAndre.Infrastruct.csproj",
+      "msbuildProject": "../ProjetoAndre.Infrastruct/ProjetoAndre.Infrastruct.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0-windows7.0": [
+      "ProjetoAndre.Aplication >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\PedroCasa\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Presentation\\ProjetoAndre.Presentation.csproj",
+      "projectName": "ProjetoAndre.Presentation",
+      "projectPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Presentation\\ProjetoAndre.Presentation.csproj",
+      "packagesPath": "C:\\Users\\PedroCasa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Presentation\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\PedroCasa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows",
+          "projectReferences": {
+            "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj": {
+              "projectPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0-windows7.0": {
+        "targetAlias": "net9.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
