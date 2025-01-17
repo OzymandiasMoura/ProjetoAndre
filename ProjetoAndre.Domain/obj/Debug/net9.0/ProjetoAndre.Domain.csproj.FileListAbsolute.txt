@@ -1,0 +1,13 @@
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Domain\bin\Debug\net9.0\ProjetoAndre.Domain.deps.json
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Domain\bin\Debug\net9.0\ProjetoAndre.Domain.dll
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Domain\bin\Debug\net9.0\ProjetoAndre.Domain.pdb
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Domain\obj\Debug\net9.0\ProjetoAndre.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Domain\obj\Debug\net9.0\ProjetoAndre.Domain.AssemblyInfoInputs.cache
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Domain\obj\Debug\net9.0\ProjetoAndre.Domain.AssemblyInfo.cs
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Domain\obj\Debug\net9.0\ProjetoAndre.Domain.csproj.CoreCompileInputs.cache
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Domain\obj\Debug\net9.0\ProjetoAndre.Domain.sourcelink.json
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Domain\obj\Debug\net9.0\ProjetoAndre.Domain.dll
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Domain\obj\Debug\net9.0\refint\ProjetoAndre.Domain.dll
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Domain\obj\Debug\net9.0\ProjetoAndre.Domain.pdb
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Domain\obj\Debug\net9.0\ref\ProjetoAndre.Domain.dll
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Domain\obj\Debug\net9.0\ProjetoAndre.Domain.csproj.AssemblyReference.cache

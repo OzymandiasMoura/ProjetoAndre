@@ -1,0 +1,323 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.TestUi\\ProjetoAndre.TestUi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj",
+        "projectName": "ProjetoAndre.Aplication",
+        "projectPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj",
+        "packagesPath": "C:\\Users\\PedroCasa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PedroCasa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Domain\\ProjetoAndre.Domain.csproj": {
+                "projectPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Domain\\ProjetoAndre.Domain.csproj"
+              },
+              "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Infrastruct\\ProjetoAndre.Infrastruct.csproj": {
+                "projectPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Infrastruct\\ProjetoAndre.Infrastruct.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Domain\\ProjetoAndre.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Domain\\ProjetoAndre.Domain.csproj",
+        "projectName": "ProjetoAndre.Domain",
+        "projectPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Domain\\ProjetoAndre.Domain.csproj",
+        "packagesPath": "C:\\Users\\PedroCasa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PedroCasa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Serilog.Sinks.Postgresql.Alternative": {
+              "target": "Package",
+              "version": "[4.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Infrastruct\\ProjetoAndre.Infrastruct.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Infrastruct\\ProjetoAndre.Infrastruct.csproj",
+        "projectName": "ProjetoAndre.Infrastruct",
+        "projectPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Infrastruct\\ProjetoAndre.Infrastruct.csproj",
+        "packagesPath": "C:\\Users\\PedroCasa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Infrastruct\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PedroCasa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Domain\\ProjetoAndre.Domain.csproj": {
+                "projectPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Domain\\ProjetoAndre.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.TestUi\\ProjetoAndre.TestUi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.TestUi\\ProjetoAndre.TestUi.csproj",
+        "projectName": "ProjetoAndre.TestUi",
+        "projectPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.TestUi\\ProjetoAndre.TestUi.csproj",
+        "packagesPath": "C:\\Users\\PedroCasa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.TestUi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PedroCasa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj": {
+                "projectPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
