@@ -9,7 +9,7 @@ namespace ProjetoAndre.Infrastruct.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Username=postgres;Password=Ozy@1195;Database=ProjetoAndreTeste");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Username=postgres;Password=1107;Database=ProjetoAndreTeste");
         }       
     }
 }
