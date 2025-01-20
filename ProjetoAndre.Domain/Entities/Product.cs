@@ -11,6 +11,8 @@
         public string? Supplier { get;  set; }
         public string NCM { get;  set; }
         public string CFop { get;  set; }
+        public Guid? ComboId { get; set; }
+        public Combo? Combo { get; set; }
 
         public Product()
         {           
@@ -27,19 +29,7 @@
             Supplier = supplier;
             NCM = nCM;
             CFop = cFop;
-        }
-
-        public void Update(string name, string barCode, string marca, decimal costPrice, decimal sellPrice, string? supplier, string nCM, string cFop)
-        {
-            Name = name;
-            BarCode = barCode;
-            Marca = marca;
-            CostPrice = costPrice;
-            SellPrice = sellPrice;
-            Supplier = supplier;
-            NCM = nCM;
-            CFop = cFop;
-        }
+        }     
 
         public void UpdateSellPrice(decimal price)
         {
@@ -63,7 +53,7 @@
                 return false;
             }            
             Product other = new Product();
-            return Id == other.Id && Name == other.Name && BarCode == other.BarCode;
+            return Id == other.Id || Name == other.Name && BarCode == other.BarCode;
         }
 
         public override int GetHashCode()

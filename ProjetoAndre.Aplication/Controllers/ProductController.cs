@@ -10,16 +10,18 @@ namespace ProjetoAndre.Aplication.Controllers
     {
         public void CrudProductController(ProductRequest request, int op)
         {
-            switch(op)
+            Product? product = ControllerTools<Product, ProductRequest>.RequestToEntity(request);
+
+            switch (op)
             {
                 case 1:
-                    CreateProductController(request);
+                    CreateProductController(product);
                     break;
                 case 2:
-                    UpdateProductController(request);
+                    UpdateProductController(product);
                     break;
                 case 3:
-                    DeleteProductController(request);
+                    DeleteProductController(product);
                     break;
                 case 4:
                     ReadProductsController();
@@ -30,26 +32,42 @@ namespace ProjetoAndre.Aplication.Controllers
             }
         }
 
-        public void CreateProductController(ProductRequest request)
-        {            
-            ProductCrudAplication productCrudAplication = new ProductCrudAplication();
-            productCrudAplication.CreateProduct(request);
-        }
-        public void UpdateProductController(ProductRequest request)
+        public void CreateProductController(Product product)
         {
-            
+            if (product == null)
+            {
+                Log.Error("Produto nulo");
+                throw new Errors("Produto nulo");
+            }
             ProductCrudAplication productCrudAplication = new ProductCrudAplication();
-            productCrudAplication.UpdateProduct(request);
+            productCrudAplication.CreateProduct(product);
         }
-        public void DeleteProductController(ProductRequest request)
-        {            
+        public void UpdateProductController(Product product)
+        {
+            if (product == null)
+            {
+                Log.Error("Produto nulo");
+                throw new Errors("Produto nulo");
+            }
+         
+        }
+        public void DeleteProductController(Product product)
+        {
+            if (product == null)
+            {
+                Log.Error("Produto nulo");
+                throw new Errors("Produto nulo");
+            }
             ProductCrudAplication productCrudAplication = new ProductCrudAplication();
-            productCrudAplication.DeleteProduct(request);
+            productCrudAplication.DeleteProduct(product);
         }
-        public List<Product> ReadProductsController()
+        public List<ProductRequest> ReadProductsController()        
         {
             ProductCrudAplication productCrudAplication = new ProductCrudAplication();
-            return productCrudAplication.ReadProducts();
+            List<Product> products = productCrudAplication.ReadProducts();
+            List<ProductRequest> productRequests = ControllerTools<Product, ProductRequest>.EntityToRequestList(products);
+
+            return productRequests;
         }
     }
 }

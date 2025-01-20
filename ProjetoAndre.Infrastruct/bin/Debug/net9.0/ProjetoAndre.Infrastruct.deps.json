@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.Design": "9.0.1",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.1",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.2",
           "ProjetoAndre.Domain": "1.0.0"

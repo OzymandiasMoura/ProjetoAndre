@@ -22,6 +22,34 @@ namespace ProjetoAndre.Infrastruct.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("ProjetoAndre.Domain.Entities.Combo", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("Discount")
+                        .HasColumnType("numeric");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Code")
+                        .IsUnique();
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.ToTable("combos");
+                });
+
             modelBuilder.Entity("ProjetoAndre.Domain.Entities.Product", b =>
                 {
                     b.Property<Guid>("Id")
@@ -35,6 +63,9 @@ namespace ProjetoAndre.Infrastruct.Migrations
                     b.Property<string>("CFop")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<Guid?>("ComboId")
+                        .HasColumnType("uuid");
 
                     b.Property<decimal>("CostPrice")
                         .HasColumnType("numeric");
@@ -55,12 +86,33 @@ namespace ProjetoAndre.Infrastruct.Migrations
                         .HasColumnType("numeric");
 
                     b.Property<string>("Supplier")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("BarCode")
+                        .IsUnique();
+
+                    b.HasIndex("ComboId");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
                     b.ToTable("products");
+                });
+
+            modelBuilder.Entity("ProjetoAndre.Domain.Entities.Product", b =>
+                {
+                    b.HasOne("ProjetoAndre.Domain.Entities.Combo", "Combo")
+                        .WithMany("ProductsInCombo")
+                        .HasForeignKey("ComboId");
+
+                    b.Navigation("Combo");
+                });
+
+            modelBuilder.Entity("ProjetoAndre.Domain.Entities.Combo", b =>
+                {
+                    b.Navigation("ProductsInCombo");
                 });
 #pragma warning restore 612, 618
         }
