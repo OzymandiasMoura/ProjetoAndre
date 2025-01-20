@@ -12,6 +12,7 @@ namespace ProjetoAndre.Infrastruct.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Username=postgres;Password=1107;Database=ProjetoAndreTeste");
+<<<<<<< HEAD
         }
         public bool TestConnection()
         {
@@ -42,5 +43,8 @@ namespace ProjetoAndre.Infrastruct.Context
             modelBuilder.Entity<Combo>().HasIndex(c => c.Name).IsUnique();
             
         }
+=======
+        }       
+>>>>>>> a2ab5e5b967bf944038adbf5d0d61b064a4eefc2
     }
 }
