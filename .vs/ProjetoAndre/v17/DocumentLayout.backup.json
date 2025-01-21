@@ -58,8 +58,7 @@
               "RelativeToolTip": "ProjetoAndre.TestUi\\Program.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAgwDIAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T03:53:27.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T03:53:27.6Z"
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "ProjetoAndre.Infrastruct\\Logger\\LoggerConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T03:49:08.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T03:49:08.583Z"
             },
             {
               "$type": "Document",
@@ -84,8 +82,7 @@
               "RelativeToolTip": "ProjetoAndre.Domain\\Entities\\Product.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA0wBcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T03:24:40.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T03:24:40.127Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "ProjetoAndre.Aplication\\CrudAplication\\Products\\ProductValidation\\ProductValidationExtension.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA1wA4AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T00:05:29.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T00:05:29.368Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "ProjetoAndre.Aplication\\Controllers\\ProductController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T21:35:27.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T21:35:27.898Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "ProjetoAndre.Aplication\\CrudAplication\\Products\\ProductCrudAplication.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T21:17:51.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T21:17:51.788Z"
             }
           ]
         }
