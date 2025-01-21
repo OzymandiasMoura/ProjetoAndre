@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1150A08-536B-46E7-88CD-D0E579814750}|ProjetoAndre.TestUi\\ProjetoAndre.TestUi.csproj|c:\\users\\pedrocasa\\documents\\projetos\\projetoandre\\projetoandre.testui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1150A08-536B-46E7-88CD-D0E579814750}|ProjetoAndre.TestUi\\ProjetoAndre.TestUi.csproj|solutionrelative:projetoandre.testui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|c:\\users\\pedrocasa\\documents\\projetos\\projetoandre\\projetoandre.aplication\\crudaplication\\combocrud\\comboupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|solutionrelative:projetoandre.aplication\\crudaplication\\combocrud\\comboupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|c:\\users\\pedrocasa\\documents\\projetos\\projetoandre\\projetoandre.aplication\\controllers\\combocontrollers\\comboupdatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|solutionrelative:projetoandre.aplication\\controllers\\combocontrollers\\comboupdatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD29F65-3519-4144-8A37-0F26F6D2125A}|ProjetoAndre.Infrastruct\\ProjetoAndre.Infrastruct.csproj|c:\\users\\pedrocasa\\documents\\projetos\\projetoandre\\projetoandre.infrastruct\\routes\\comboroutes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD29F65-3519-4144-8A37-0F26F6D2125A}|ProjetoAndre.Infrastruct\\ProjetoAndre.Infrastruct.csproj|solutionrelative:projetoandre.infrastruct\\routes\\comboroutes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|c:\\users\\pedrocasa\\documents\\projetos\\projetoandre\\projetoandre.aplication\\controllers\\combocontrollers\\combodeletecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|solutionrelative:projetoandre.aplication\\controllers\\combocontrollers\\combodeletecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|c:\\users\\pedrocasa\\documents\\projetos\\projetoandre\\projetoandre.aplication\\controllers\\common\\controllertools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|solutionrelative:projetoandre.aplication\\controllers\\common\\controllertools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ControllerTools.cs",
+              "DocumentMoniker": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\Controllers\\Common\\ControllerTools.cs",
+              "RelativeDocumentMoniker": "ProjetoAndre.Aplication\\Controllers\\Common\\ControllerTools.cs",
+              "ToolTip": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\Controllers\\Common\\ControllerTools.cs",
+              "RelativeToolTip": "ProjetoAndre.Aplication\\Controllers\\Common\\ControllerTools.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:40:28.23Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -18,6 +56,71 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ComboDeleteController.cs",
+              "DocumentMoniker": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\Controllers\\ComboControllers\\ComboDeleteController.cs",
+              "RelativeDocumentMoniker": "ProjetoAndre.Aplication\\Controllers\\ComboControllers\\ComboDeleteController.cs",
+              "ToolTip": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\Controllers\\ComboControllers\\ComboDeleteController.cs",
+              "RelativeToolTip": "ProjetoAndre.Aplication\\Controllers\\ComboControllers\\ComboDeleteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:45:51.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ComboRoutes.cs",
+              "DocumentMoniker": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Infrastruct\\Routes\\ComboRoutes.cs",
+              "RelativeDocumentMoniker": "ProjetoAndre.Infrastruct\\Routes\\ComboRoutes.cs",
+              "ToolTip": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Infrastruct\\Routes\\ComboRoutes.cs",
+              "RelativeToolTip": "ProjetoAndre.Infrastruct\\Routes\\ComboRoutes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:39:54.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ComboUpdateController.cs",
+              "DocumentMoniker": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\Controllers\\ComboControllers\\ComboUpdateController.cs",
+              "RelativeDocumentMoniker": "ProjetoAndre.Aplication\\Controllers\\ComboControllers\\ComboUpdateController.cs",
+              "ToolTip": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\Controllers\\ComboControllers\\ComboUpdateController.cs",
+              "RelativeToolTip": "ProjetoAndre.Aplication\\Controllers\\ComboControllers\\ComboUpdateController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAC8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:41:10.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ComboUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\CrudAplication\\ComboCrud\\ComboUpdate.cs",
+              "RelativeDocumentMoniker": "ProjetoAndre.Aplication\\CrudAplication\\ComboCrud\\ComboUpdate.cs",
+              "ToolTip": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\CrudAplication\\ComboCrud\\ComboUpdate.cs",
+              "RelativeToolTip": "ProjetoAndre.Aplication\\CrudAplication\\ComboCrud\\ComboUpdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:39:42.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.TestUi\\Program.cs",
+              "RelativeDocumentMoniker": "ProjetoAndre.TestUi\\Program.cs",
+              "ToolTip": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.TestUi\\Program.cs",
+              "RelativeToolTip": "ProjetoAndre.TestUi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:35:24.961Z",
+              "EditorCaption": ""
             }
           ]
         }

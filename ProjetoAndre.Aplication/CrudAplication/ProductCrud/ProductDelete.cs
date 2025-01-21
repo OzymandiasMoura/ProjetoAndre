@@ -9,7 +9,7 @@ namespace ProjetoAndre.Aplication.CrudAplication.ProductCrud;
 
 public class ProductDelete
 {
-    public void DeleteProduct(Product product)
+    public bool DeleteProduct(Product product)
     {
         try
         {
@@ -17,6 +17,8 @@ public class ProductDelete
             IRoutes<Product, AppDBContext> routes = new ProductRoutes();
             AppDBContext context = new AppDBContext();
             routes.Delete(product, context);
+
+            return true;
         }
         catch (Exception ex)
         {

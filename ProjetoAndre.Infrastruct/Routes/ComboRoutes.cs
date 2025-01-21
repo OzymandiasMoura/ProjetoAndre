@@ -1,6 +1,8 @@
 ﻿using ProjetoAndre.Domain.Entities;
+using ProjetoAndre.Domain.Erros;
 using ProjetoAndre.Domain.Services.Common;
 using ProjetoAndre.Infrastruct.Context;
+using Serilog;
 
 namespace ProjetoAndre.Infrastruct.Routes;
 
@@ -10,7 +12,8 @@ public class ComboRoutes : IRoutes<Combo, AppDBContext>
     {
         if (context is null)
         {
-            throw new InvalidOperationException("Falha na conexão com o banco de dados.");
+            Log.Error("Falha na conexão com o banco de dados.");
+            throw new DataConnectionFailureException("Falha na conexão com o banco de dados.");
         }
         context.combos.Add(entity);
         await context.SaveChangesAsync();
@@ -20,7 +23,8 @@ public class ComboRoutes : IRoutes<Combo, AppDBContext>
     {
         if (context is null)
         {
-            throw new InvalidOperationException("Falha na conexão com o banco de dados.");
+            Log.Error("Falha na conexão com o banco de dados.");
+            throw new DataConnectionFailureException("Falha na conexão com o banco de dados.");
         }
         var list = context.combos;
         return list.ToList();
@@ -31,7 +35,8 @@ public class ComboRoutes : IRoutes<Combo, AppDBContext>
         var existingEntity = await context.combos.FindAsync(entity.IdCombo);
         if (context is null)
         {
-            throw new InvalidOperationException("Falha na conexão com o banco de dados.");
+            Log.Error("Falha na conexão com o banco de dados.");
+            throw new DataConnectionFailureException("Falha na conexão com o banco de dados.");
         }
         if (existingEntity == null)
         {
@@ -43,10 +48,15 @@ public class ComboRoutes : IRoutes<Combo, AppDBContext>
     public async Task Delete(Combo entity, AppDBContext context)
     {
         var existingEntity = await context.combos.FindAsync(entity.IdCombo);
+        if (context is null)
+        {
+            Log.Error("Falha na conexão com o banco de dados.");
+            throw new DataConnectionFailureException("Falha na conexão com o banco de dados.");
+        }
         if (existingEntity == null)
         {
-            Console.WriteLine("Combo não encontrado");
-            return;
+            Log.Error("Falha na conexão com o banco de dados.");
+            throw new DataConnectionFailureException("Falha na conexão com o banco de dados.");
         }        
         context.combos.Remove(existingEntity);
         await context.SaveChangesAsync();

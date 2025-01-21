@@ -2,15 +2,28 @@
 using ProjetoAndre.Infrastruct.Context;
 using ProjetoAndre.Infrastruct.Routes;
 using ProjetoAndre.Domain.Services.Common;
+using ProjetoAndre.Domain.Erros;
+using Serilog;
 
 namespace ProjetoAndre.Aplication.CrudAplication.ComboCrud;
 
 public class ComboUpdate
 {
-    public async void Update(Combo combo)
-    {        
-        AppDBContext context = new AppDBContext();
-        IRoutes<Combo, AppDBContext> routes = new ComboRoutes();
-        await routes.Update(combo, context);
+    public bool UpdateCombo(Combo combo)
+    {
+        try
+        {
+            AppDBContext context = new AppDBContext();
+            IRoutes<Combo, AppDBContext> routes = new ComboRoutes();
+            routes.Update(combo, context);
+
+            return true;
+        }
+        catch
+        {
+            Log.Error("Conexão com a database falhou.");
+            throw new DataConnectionFailureException("Conexão com a database falhou.");
+        }
+        
     }
 }

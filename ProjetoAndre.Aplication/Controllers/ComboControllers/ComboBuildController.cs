@@ -1,4 +1,5 @@
-﻿using ProjetoAndre.Aplication.CrudAplication.ComboCrud;
+﻿using ProjetoAndre.Aplication.Controllers.Common;
+using ProjetoAndre.Aplication.CrudAplication.ComboCrud;
 using ProjetoAndre.Aplication.CrudAplication.ProductCrud;
 using ProjetoAndre.Aplication.Requests;
 using ProjetoAndre.Domain.Entities;
@@ -6,7 +7,7 @@ using ProjetoAndre.Domain.Erros;
 using ProjetoAndre.Domain.Services;
 using Serilog;
 
-namespace ProjetoAndre.Aplication.Controllers;
+namespace ProjetoAndre.Aplication.Controllers.ComboControllers;
 
 public class ComboBuildController
 {
@@ -15,7 +16,7 @@ public class ComboBuildController
     private readonly ComboUpdate _comboUpdate;
 
     public ComboBuildController(ProductUpdate productUpdate, ComboUpdate comboUpdate)
-    {       
+    {
         _productUpdate = productUpdate;
         _comboUpdate = comboUpdate;
     }
@@ -32,7 +33,7 @@ public class ComboBuildController
         {
             _comboBuild.AddProductToCombo(product, combo);
             _productUpdate.UpdateProduct(product);
-            _comboUpdate.Update(combo);
+            _comboUpdate.UpdateCombo(combo);
         }
 
         return true;
@@ -51,7 +52,7 @@ public class ComboBuildController
         {
             _comboBuild.RemoveProductFromCombo(product, combo);
             _productUpdate.UpdateProduct(product);
-            _comboUpdate.Update(combo);
+            _comboUpdate.UpdateCombo(combo);
         }
 
         return true;
@@ -68,6 +69,6 @@ public class ComboBuildController
         {
             Log.Error("O combo não pode ser vazio.");
             throw new InvalidComboException("O combo não pode ser vazio.");
-        }        
+        }
     }
 }

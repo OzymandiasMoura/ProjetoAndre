@@ -1,6 +1,4 @@
-﻿using ProjetoAndre.Aplication.Controllers;
-using ProjetoAndre.Aplication.CrudAplication.ComboCrud;
-using ProjetoAndre.Aplication.CrudAplication.ProductCrud;
+﻿using ProjetoAndre.Aplication.Controllers.ComboControllers;
 using ProjetoAndre.Aplication.Requests;
 using ProjetoAndre.Infrastruct.Context;
 
@@ -23,18 +21,18 @@ class Program
             Console.WriteLine("Erro ao conectar com o banco de dados");
         }
 
+        var combo3 = new ComboRequest(null, "Combo 4 Latinhas", "C2", 4, null);
 
-        ComboRequest comboRequest = new ComboRequest(null, "Combo 3 Latinhas", "C1", 2, new List<ProductRequest>());
-        ProductRequest product = new ProductRequest(null, "Cerveja", "12345678", null, 2, 1, null, null, null);
-        comboRequest.Products.Add(product);
-        List<ProductRequest> productRequests = comboRequest.Products;
+        ComboDeleteController comboDeleteController = new ComboDeleteController(combo3);
+        comboDeleteController.DeleteComboController();  
 
 
-        ProductUpdate productUpdate = new ProductUpdate();
-        ComboUpdate comboUpdate = new ComboUpdate();
-        ComboBuildController buildController = new ComboBuildController(productUpdate, comboUpdate);
 
-        buildController.ComboBuildAdd(productRequests, comboRequest);
+
+
+
+
+
 
 
 

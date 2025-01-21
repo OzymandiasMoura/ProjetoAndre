@@ -27,7 +27,7 @@ public class ProductRoutes : IRoutes<Product, AppDBContext>
 
     public async Task Update(Product entity, AppDBContext context)
     {
-        var existingEntity = await context.combos.FindAsync(entity.IdProduct);
+        var existingEntity = await context.products.FindAsync(entity.IdProduct);
         if (existingEntity == null)
         {
             throw new InvalidOperationException("Produto não encontrado.");
@@ -41,7 +41,7 @@ public class ProductRoutes : IRoutes<Product, AppDBContext>
     }
     public async Task Delete(Product entity, AppDBContext context)
     {
-        var existingEntity = await context.combos.FindAsync(entity.IdProduct);
+        var existingEntity = await context.products.FindAsync(entity.IdProduct);
         if (existingEntity == null)
         {
             Console.WriteLine("Produto não encontrado");
@@ -51,7 +51,7 @@ public class ProductRoutes : IRoutes<Product, AppDBContext>
         {
             throw new InvalidOperationException("Falha na conexão com o banco de dados.");
         }
-        context.combos.Remove(existingEntity);
+        context.products.Remove(existingEntity);
         await context.SaveChangesAsync();
     }
 }

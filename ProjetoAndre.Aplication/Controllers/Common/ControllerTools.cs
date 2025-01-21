@@ -1,10 +1,9 @@
-﻿
-using ProjetoAndre.Aplication.CrudAplication.ComboCrud;
+﻿using ProjetoAndre.Aplication.CrudAplication.ComboCrud;
 using ProjetoAndre.Aplication.CrudAplication.ProductCrud;
 using ProjetoAndre.Aplication.Requests;
 using ProjetoAndre.Domain.Entities;
 
-namespace ProjetoAndre.Aplication.Controllers;
+namespace ProjetoAndre.Aplication.Controllers.Common;
 
 public static class ControllerTools<T, U>
 {
@@ -48,20 +47,20 @@ public static class ControllerTools<T, U>
         {
             ComboRequest? comboRequest = request as ComboRequest;
             ComboRead? comboRead = new ComboRead();
-            List<Combo> combos = comboRead.ReadCombos();
+            List<Combo> combos = comboRead.ReadCombo();
             if (comboRequest is null)
             {
                 throw new ArgumentException("Request está vazio.");
-            } 
+            }
 
             if (comboRequest.Products == null)
             {
                 foreach (var item in combos)
                 {
                     if (item.IdCombo == comboRequest.Id || item.Code == comboRequest.Code)
-                    {                        
+                    {
                         return (T)(object)item;
-                    } 
+                    }
                 }
                 Combo combo = new Combo(comboRequest.Name, comboRequest.Code, comboRequest.Discount);
                 return (T)(object)combo;
@@ -72,7 +71,7 @@ public static class ControllerTools<T, U>
                 foreach (var item in combos)
                 {
                     if (item.IdCombo == comboRequest.Id || item.Code == comboRequest.Code)
-                    {                        
+                    {
                         return (T)(object)item;
                     }
                 }
@@ -90,8 +89,8 @@ public static class ControllerTools<T, U>
             List<Product> products = productRead.ReadProducts();
             foreach (var item in products)
             {
-                if (item.IdProduct == productRequest.Id || item.BarCode == productRequest.BarCode || item.Name == productRequest.Name)
-                {                    
+                if (item.IdProduct == productRequest.Id || item.BarCode == productRequest.BarCode)
+                {
                     return (T)(object)item;
                 }
             }

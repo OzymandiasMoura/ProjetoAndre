@@ -9,7 +9,7 @@ namespace ProjetoAndre.Aplication.CrudAplication.ProductCrud;
 
 public class ProductUpdate
 {
-    public void UpdateProduct(Product product)
+    public bool UpdateProduct(Product product)
     {
         try
         {            
@@ -17,6 +17,8 @@ public class ProductUpdate
             IRoutes<Product, AppDBContext> routes = new ProductRoutes();
             AppDBContext context = new AppDBContext();
             routes.Update(product, context);
+
+            return true;
         }
         catch (Exception ex)
         {

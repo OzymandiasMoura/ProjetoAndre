@@ -9,7 +9,7 @@ namespace ProjetoAndre.Aplication.CrudAplication.ProductCrud;
 
 public class ProductCreate
 {
-    public void CreateProduct(Product product)
+    public bool CreateProduct(Product product)
     {
         try
         {            
@@ -17,6 +17,8 @@ public class ProductCreate
             IRoutes<Product, AppDBContext> routes = new ProductRoutes();
             AppDBContext context = new AppDBContext();
             routes.Create(product, context);
+
+            return true;
         }
         catch (Exception ex)
         {
