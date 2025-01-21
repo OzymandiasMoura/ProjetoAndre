@@ -35,3 +35,7 @@ C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Presentation\obj
 C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Presentation\obj\Debug\net9.0-windows\ProjetoAndre.Presentation.pdb
 C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Presentation\obj\Debug\net9.0-windows\ProjetoAndre.Presentation.genruntimeconfig.cache
 C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Presentation\obj\Debug\net9.0-windows\ref\ProjetoAndre.Presentation.dll
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Presentation\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Presentation\bin\Debug\net9.0-windows\Serilog.dll
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Presentation\bin\Debug\net9.0-windows\Serilog.Sinks.File.dll
+C:\Users\PedroCasa\Documents\Projetos\ProjetoAndre\ProjetoAndre.Presentation\bin\Debug\net9.0-windows\Serilog.Sinks.Postgresql.Alternative.dll

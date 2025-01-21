@@ -1,5 +1,9 @@
 ﻿using ProjetoAndre.Aplication.Controllers;
+using ProjetoAndre.Aplication.CrudAplication.ComboCrud;
+using ProjetoAndre.Aplication.CrudAplication.ProductCrud;
 using ProjetoAndre.Aplication.Requests;
+using ProjetoAndre.Infrastruct.Context;
+
 
 namespace ProjetoAndre.TesteUi;
 
@@ -7,100 +11,32 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Escolha a opção que deseja testar: \n");
-        Console.WriteLine("1 - Criar Produto\n");
-        Console.WriteLine("2 - Atualizar Produto\n");
-        Console.WriteLine("3 - Deletar Produto\n");
-        Console.WriteLine("4 - Listar Produtos\n");
-        int resp1 = int.Parse(Console.ReadLine());
+        Domain.Erros.Logger.LoggerConfig loggerConfig = new Domain.Erros.Logger.LoggerConfig();
+        var context = new AppDBContext();
 
-       
+        if (context.TestConnection())
+        {
+            Console.WriteLine("Conexão com o banco de dados estabelecida com sucesso");
+        }
+        else
+        {
+            Console.WriteLine("Erro ao conectar com o banco de dados");
+        }
 
-        
 
-        if (resp1 == 0)
-        {
-            Console.WriteLine("Por favor digite uma opção válida");
-        }
-        else if (resp1 == 1)
-        {
-            Console.WriteLine("Nome");
-            string name = Console.ReadLine();
-            Console.WriteLine("BarCode");
-            string barCode = Console.ReadLine();
-            Console.WriteLine("Marca");
-            string marca = Console.ReadLine();
-            Console.WriteLine("Preço de Custo");
-            decimal costPrice = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Preço de Venda");
-            decimal sellPrice = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Fornecedor");
-            string supplier = Console.ReadLine();
-            Console.WriteLine("Ncm");
-            string ncm = Console.ReadLine();
-            Console.WriteLine("Cfop");
-            string cfop = Console.ReadLine();
-            ProductRequest productRequest = new ProductRequest(name, barCode, marca, costPrice, sellPrice, supplier, ncm, cfop);
+        ComboRequest comboRequest = new ComboRequest(null, "Combo 3 Latinhas", "C1", 2, new List<ProductRequest>());
+        ProductRequest product = new ProductRequest(null, "Cerveja", "12345678", null, 2, 1, null, null, null);
+        comboRequest.Products.Add(product);
+        List<ProductRequest> productRequests = comboRequest.Products;
 
-            ProductController productController = new ProductController();
-            productController.CrudProductController(productRequest, 1);
-        }
-        else if (resp1 == 2)
-        {
-            Console.WriteLine("Id");
-            Guid id = Guid.Parse(Console.ReadLine());
-            Console.WriteLine("Nome");
-            string name = Console.ReadLine();
-            Console.WriteLine("BarCode");
-            string barCode = Console.ReadLine();
-            Console.WriteLine("Marca");
-            string marca = Console.ReadLine();
-            Console.WriteLine("Preço de Custo");
-            decimal costPrice = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Preço de Venda");
-            decimal sellPrice = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Fornecedor");
-            string supplier = Console.ReadLine();
-            Console.WriteLine("Ncm");
-            string ncm = Console.ReadLine();
-            Console.WriteLine("Cfop");
-            string cfop = Console.ReadLine();
-            ProductRequest productRequest = new ProductRequest(name, barCode, marca, costPrice, sellPrice, supplier, ncm, cfop);
-            ProductController productController = new ProductController();
-            productController.CrudProductController(productRequest, 2);
-        }
-        else if (resp1 == 3)
-        {
-            Console.WriteLine("Id");
-            Guid id = Guid.Parse(Console.ReadLine());
-            Console.WriteLine("Nome");
-            string name = Console.ReadLine();
-            Console.WriteLine("BarCode");
-            string barCode = Console.ReadLine();
-            Console.WriteLine("Marca");
-            string marca = Console.ReadLine();
-            Console.WriteLine("Preço de Custo");
-            decimal costPrice = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Preço de Venda");
-            decimal sellPrice = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Fornecedor");
-            string supplier = Console.ReadLine();
-            Console.WriteLine("Ncm");
-            string ncm = Console.ReadLine();
-            Console.WriteLine("Cfop");
-            string cfop = Console.ReadLine();
-            ProductRequest productRequest = new ProductRequest(name, barCode, marca, costPrice, sellPrice, supplier, ncm, cfop);
-            ProductController productController = new ProductController();
-            productController.CrudProductController(productRequest, 3);
-        }
-        else if (resp1 == 4)
-        {
-            ProductController productController = new ProductController();
-            var products = productController.ReadProductsController();
-            foreach (var product in products)
-            {
-                Console.WriteLine(product.ToString());
-            }
-        }
+
+        ProductUpdate productUpdate = new ProductUpdate();
+        ComboUpdate comboUpdate = new ComboUpdate();
+        ComboBuildController buildController = new ComboBuildController(productUpdate, comboUpdate);
+
+        buildController.ComboBuildAdd(productRequests, comboRequest);
+
+
+
     }
 }
