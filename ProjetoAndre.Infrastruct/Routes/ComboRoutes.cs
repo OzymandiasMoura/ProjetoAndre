@@ -1,5 +1,5 @@
 ﻿using ProjetoAndre.Domain.Entities;
-using ProjetoAndre.Domain.Entities.InterfaceCrud;
+using ProjetoAndre.Domain.Services.Common;
 using ProjetoAndre.Infrastruct.Context;
 
 namespace ProjetoAndre.Infrastruct.Routes;
@@ -28,7 +28,7 @@ public class ComboRoutes : IRoutes<Combo, AppDBContext>
 
     public async Task Update(Combo entity, AppDBContext context)
     {
-        var existingEntity = await context.combos.FindAsync(entity.Id);
+        var existingEntity = await context.combos.FindAsync(entity.IdCombo);
         if (context is null)
         {
             throw new InvalidOperationException("Falha na conexão com o banco de dados.");
@@ -42,7 +42,7 @@ public class ComboRoutes : IRoutes<Combo, AppDBContext>
     }
     public async Task Delete(Combo entity, AppDBContext context)
     {
-        var existingEntity = await context.combos.FindAsync(entity.Id);
+        var existingEntity = await context.combos.FindAsync(entity.IdCombo);
         if (existingEntity == null)
         {
             Console.WriteLine("Combo não encontrado");

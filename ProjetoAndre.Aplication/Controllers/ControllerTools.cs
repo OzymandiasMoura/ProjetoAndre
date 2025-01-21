@@ -1,5 +1,6 @@
-﻿using ProjetoAndre.Aplication.CrudAplication.Combos;
-using ProjetoAndre.Aplication.CrudAplication.Products;
+﻿
+using ProjetoAndre.Aplication.CrudAplication.ComboCrud;
+using ProjetoAndre.Aplication.CrudAplication.ProductCrud;
 using ProjetoAndre.Aplication.Requests;
 using ProjetoAndre.Domain.Entities;
 
@@ -46,8 +47,8 @@ public static class ControllerTools<T, U>
         if (typeof(U) == typeof(ComboRequest) && typeof(T) == typeof(Combo))
         {
             ComboRequest? comboRequest = request as ComboRequest;
-            ComboCrudAplication comboCrudAplication = new ComboCrudAplication();
-            List<Combo> combos = comboCrudAplication.ReadCombos();
+            ComboRead? comboRead = new ComboRead();
+            List<Combo> combos = comboRead.ReadCombos();
             if (comboRequest is null)
             {
                 throw new ArgumentException("Request está vazio.");
@@ -57,7 +58,7 @@ public static class ControllerTools<T, U>
             {
                 foreach (var item in combos)
                 {
-                    if (item.Id == comboRequest.Id || item.Code == comboRequest.Code)
+                    if (item.IdCombo == comboRequest.Id || item.Code == comboRequest.Code)
                     {                        
                         return (T)(object)item;
                     } 
@@ -70,12 +71,12 @@ public static class ControllerTools<T, U>
                 List<Product> products = new List<Product>();
                 foreach (var item in combos)
                 {
-                    if (item.Id == comboRequest.Id || item.Code == comboRequest.Code)
+                    if (item.IdCombo == comboRequest.Id || item.Code == comboRequest.Code)
                     {                        
                         return (T)(object)item;
                     }
                 }
-                Combo combo = new Combo(comboRequest.Id, comboRequest.Name, comboRequest.Code, comboRequest.Discount, products);
+                Combo combo = new Combo(comboRequest.Name, comboRequest.Code, comboRequest.Discount, products);
                 return (T)(object)combo;
             }
         }
@@ -85,16 +86,16 @@ public static class ControllerTools<T, U>
         if (typeof(U) == typeof(ProductRequest) && typeof(T) == typeof(Product))
         {
             ProductRequest? productRequest = request as ProductRequest;
-            ProductCrudAplication productCrudAplication = new ProductCrudAplication();
-            List<Product> products = productCrudAplication.ReadProducts();
+            ProductRead productRead = new ProductRead();
+            List<Product> products = productRead.ReadProducts();
             foreach (var item in products)
             {
-                if (item.Id == productRequest.Id || item.BarCode == productRequest.BarCode || item.Name == productRequest.Name)
+                if (item.IdProduct == productRequest.Id || item.BarCode == productRequest.BarCode || item.Name == productRequest.Name)
                 {                    
                     return (T)(object)item;
                 }
             }
-            Product product = new Product(productRequest.Name, productRequest.BarCode, productRequest.Marca, productRequest.CostPrice, productRequest.SellPrice, productRequest.Supplier, productRequest.NCM, productRequest.CFop);
+            Product product = new Product(null, productRequest.Name, productRequest.BarCode, productRequest.Marca, productRequest.CostPrice, productRequest.SellPrice, productRequest.Supplier, productRequest.NCM, productRequest.CFop);
             return (T)(object)product;
         }
         return default;
@@ -113,7 +114,7 @@ public static class ControllerTools<T, U>
             }
             if (combo.ProductsInCombo == null)
             {
-                ComboRequest request = new ComboRequest(combo.Id, combo.Name, combo.Code, combo.Discount, null);
+                ComboRequest request = new ComboRequest(combo.IdCombo, combo.Name, combo.Code, combo.Discount, null);
                 return (U)(object)request;
             }
             if (combo.ProductsInCombo != null)
@@ -121,10 +122,10 @@ public static class ControllerTools<T, U>
                 List<ProductRequest> productRequests = new List<ProductRequest>();
                 foreach (var item in combo.ProductsInCombo)
                 {
-                    ProductRequest productRequest = new ProductRequest(item.Id, item.Name, item.BarCode, item.Marca, item.CostPrice, item.SellPrice, item.Supplier, item.NCM, item.CFop);
+                    ProductRequest productRequest = new ProductRequest(item.IdProduct, item.Name, item.BarCode, item.Marca, item.CostPrice, item.SellPrice, item.Supplier, item.NCM, item.CFop);
                     productRequests.Add(productRequest);
                 }
-                ComboRequest request = new ComboRequest(combo.Id, combo.Name, combo.Code, combo.Discount, productRequests);
+                ComboRequest request = new ComboRequest(combo.IdCombo, combo.Name, combo.Code, combo.Discount, productRequests);
                 return (U)(object)request;
             }
         }
@@ -138,7 +139,7 @@ public static class ControllerTools<T, U>
             {
                 return default;
             }
-            ProductRequest request = new ProductRequest(product.Id, product.Name, product.BarCode, product.Marca, product.CostPrice, product.SellPrice, product.Supplier, product.NCM, product.CFop);
+            ProductRequest request = new ProductRequest(product.IdProduct, product.Name, product.BarCode, product.Marca, product.CostPrice, product.SellPrice, product.Supplier, product.NCM, product.CFop);
             return (U)(object)request;
         }
 

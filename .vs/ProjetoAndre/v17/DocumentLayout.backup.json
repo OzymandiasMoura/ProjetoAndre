@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1150A08-536B-46E7-88CD-D0E579814750}|ProjetoAndre.TestUi\\ProjetoAndre.TestUi.csproj|c:\\users\\pedrocasa\\documents\\projetos\\projetoandre\\projetoandre.testui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1150A08-536B-46E7-88CD-D0E579814750}|ProjetoAndre.TestUi\\ProjetoAndre.TestUi.csproj|solutionrelative:projetoandre.testui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|c:\\users\\pedrocasa\\documents\\projetos\\projetoandre\\projetoandre.aplication\\controllers\\productcreationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|solutionrelative:projetoandre.aplication\\controllers\\productcreationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|c:\\users\\pedrocasa\\documents\\projetos\\projetoandre\\projetoandre.aplication\\controllers\\combocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|solutionrelative:projetoandre.aplication\\controllers\\combocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|c:\\users\\pedrocasa\\documents\\projetos\\projetoandre\\projetoandre.aplication\\controllers\\controllertools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|solutionrelative:projetoandre.aplication\\controllers\\controllertools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|c:\\users\\pedrocasa\\documents\\projetos\\projetoandre\\projetoandre.aplication\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|solutionrelative:projetoandre.aplication\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D87925A3-0EAB-476B-B151-54D644C4CFF6}|ProjetoAndre.Domain\\ProjetoAndre.Domain.csproj|c:\\users\\pedrocasa\\documents\\projetos\\projetoandre\\projetoandre.domain\\erros\\invalidcomboexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D87925A3-0EAB-476B-B151-54D644C4CFF6}|ProjetoAndre.Domain\\ProjetoAndre.Domain.csproj|solutionrelative:projetoandre.domain\\erros\\invalidcomboexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|c:\\users\\pedrocasa\\documents\\projetos\\projetoandre\\projetoandre.aplication\\crudaplication\\products\\productcrudaplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D66D1DD-6DFF-4D87-9A66-E89355651985}|ProjetoAndre.Aplication\\ProjetoAndre.Aplication.csproj|solutionrelative:projetoandre.aplication\\crudaplication\\products\\productcrudaplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D87925A3-0EAB-476B-B151-54D644C4CFF6}|ProjetoAndre.Domain\\ProjetoAndre.Domain.csproj|c:\\users\\pedrocasa\\documents\\projetos\\projetoandre\\projetoandre.domain\\erros\\invalidproductrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D87925A3-0EAB-476B-B151-54D644C4CFF6}|ProjetoAndre.Domain\\ProjetoAndre.Domain.csproj|solutionrelative:projetoandre.domain\\erros\\invalidproductrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFD29F65-3519-4144-8A37-0F26F6D2125A}|ProjetoAndre.Infrastruct\\ProjetoAndre.Infrastruct.csproj|c:\\users\\pedrocasa\\documents\\projetos\\projetoandre\\projetoandre.infrastruct\\routes\\productroutes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFD29F65-3519-4144-8A37-0F26F6D2125A}|ProjetoAndre.Infrastruct\\ProjetoAndre.Infrastruct.csproj|solutionrelative:projetoandre.infrastruct\\routes\\productroutes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BFD29F65-3519-4144-8A37-0F26F6D2125A}|ProjetoAndre.Infrastruct\\ProjetoAndre.Infrastruct.csproj|c:\\users\\pedrocasa\\documents\\projetos\\projetoandre\\projetoandre.infrastruct\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD29F65-3519-4144-8A37-0F26F6D2125A}|ProjetoAndre.Infrastruct\\ProjetoAndre.Infrastruct.csproj|solutionrelative:projetoandre.infrastruct\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,21 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.TestUi\\Program.cs",
-              "RelativeDocumentMoniker": "ProjetoAndre.TestUi\\Program.cs",
-              "ToolTip": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.TestUi\\Program.cs",
-              "RelativeToolTip": "ProjetoAndre.TestUi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAALwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T19:41:48.02Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -55,54 +42,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ComboController.cs",
-              "DocumentMoniker": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\Controllers\\ComboController.cs",
-              "RelativeDocumentMoniker": "ProjetoAndre.Aplication\\Controllers\\ComboController.cs",
-              "ToolTip": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\Controllers\\ComboController.cs",
-              "RelativeToolTip": "ProjetoAndre.Aplication\\Controllers\\ComboController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T03:41:19.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "ProjetoAndre.Aplication\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "ProjetoAndre.Aplication\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "InvalidComboException.cs",
+              "DocumentMoniker": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Domain\\Erros\\InvalidComboException.cs",
+              "RelativeDocumentMoniker": "ProjetoAndre.Domain\\Erros\\InvalidComboException.cs",
+              "ToolTip": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Domain\\Erros\\InvalidComboException.cs",
+              "RelativeToolTip": "ProjetoAndre.Domain\\Erros\\InvalidComboException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T03:40:35.283Z",
+              "WhenOpened": "2025-01-21T18:37:25.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ProductCrudAplication.cs",
-              "DocumentMoniker": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\CrudAplication\\Products\\ProductCrudAplication.cs",
-              "RelativeDocumentMoniker": "ProjetoAndre.Aplication\\CrudAplication\\Products\\ProductCrudAplication.cs",
-              "ToolTip": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\CrudAplication\\Products\\ProductCrudAplication.cs",
-              "RelativeToolTip": "ProjetoAndre.Aplication\\CrudAplication\\Products\\ProductCrudAplication.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAANAAAAAAAAAA==",
+              "Title": "InvalidProductRequestException.cs",
+              "DocumentMoniker": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Domain\\Erros\\InvalidProductRequestException.cs",
+              "RelativeDocumentMoniker": "ProjetoAndre.Domain\\Erros\\InvalidProductRequestException.cs",
+              "ToolTip": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Domain\\Erros\\InvalidProductRequestException.cs",
+              "RelativeToolTip": "ProjetoAndre.Domain\\Erros\\InvalidProductRequestException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T03:39:20.579Z",
+              "WhenOpened": "2025-01-21T18:35:47.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ControllerTools.cs",
+              "DocumentMoniker": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\Controllers\\ControllerTools.cs",
+              "RelativeDocumentMoniker": "ProjetoAndre.Aplication\\Controllers\\ControllerTools.cs",
+              "ToolTip": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\Controllers\\ControllerTools.cs",
+              "RelativeToolTip": "ProjetoAndre.Aplication\\Controllers\\ControllerTools.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T18:34:53.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductCreationController.cs",
+              "DocumentMoniker": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\Controllers\\ProductCreationController.cs",
+              "RelativeDocumentMoniker": "ProjetoAndre.Aplication\\Controllers\\ProductCreationController.cs",
+              "ToolTip": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Aplication\\Controllers\\ProductCreationController.cs",
+              "RelativeToolTip": "ProjetoAndre.Aplication\\Controllers\\ProductCreationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T18:25:59.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ProductRoutes.cs",
-              "DocumentMoniker": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Infrastruct\\Routes\\ProductRoutes.cs",
-              "RelativeDocumentMoniker": "ProjetoAndre.Infrastruct\\Routes\\ProductRoutes.cs",
-              "ToolTip": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Infrastruct\\Routes\\ProductRoutes.cs",
-              "RelativeToolTip": "ProjetoAndre.Infrastruct\\Routes\\ProductRoutes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Infrastruct\\Context\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "ProjetoAndre.Infrastruct\\Context\\AppDBContext.cs",
+              "ToolTip": "C:\\Users\\PedroCasa\\Documents\\Projetos\\ProjetoAndre\\ProjetoAndre.Infrastruct\\Context\\AppDBContext.cs",
+              "RelativeToolTip": "ProjetoAndre.Infrastruct\\Context\\AppDBContext.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwCUAAACbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T03:39:04.9Z",
+              "WhenOpened": "2025-01-21T06:44:39.535Z",
               "EditorCaption": ""
             }
           ]

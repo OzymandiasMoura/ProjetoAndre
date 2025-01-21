@@ -24,7 +24,7 @@ namespace ProjetoAndre.Infrastruct.Migrations
 
             modelBuilder.Entity("ProjetoAndre.Domain.Entities.Combo", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("IdCombo")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
@@ -39,7 +39,10 @@ namespace ProjetoAndre.Infrastruct.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("Id");
+                    b.HasKey("IdCombo");
+
+                    b.HasAlternateKey("Code")
+                        .HasName("ComboCode");
 
                     b.HasIndex("Code")
                         .IsUnique();
@@ -52,7 +55,7 @@ namespace ProjetoAndre.Infrastruct.Migrations
 
             modelBuilder.Entity("ProjetoAndre.Domain.Entities.Product", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("IdProduct")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
@@ -88,7 +91,7 @@ namespace ProjetoAndre.Infrastruct.Migrations
                     b.Property<string>("Supplier")
                         .HasColumnType("text");
 
-                    b.HasKey("Id");
+                    b.HasKey("IdProduct");
 
                     b.HasIndex("BarCode")
                         .IsUnique();

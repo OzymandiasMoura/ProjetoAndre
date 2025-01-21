@@ -1,47 +1,65 @@
 ﻿using ProjetoAndre.Domain.Entities;
 using ProjetoAndre.Domain.Erros;
 
-
 namespace ProjetoAndre.Domain.Services;
 
 public class ProductServices : IComboBuild
 {
+    public decimal ProfitMarginInCombo(Combo combo)
+    {
+        if (combo is null)
+        {
+            throw new InvalidComboException("Combo não informado.");
+        }
+        if (combo.ProductsInCombo == null)
+        {
+            throw new InvalidComboException("Combo não possui produtos cadastrados.");
+        }
+        List<Product> products = (List<Product>)combo.ProductsInCombo;
+        decimal total = combo.ProductsInCombo.Sum(p => this.ProfitMargin(p));
+        decimal totalcost = combo.ProductsInCombo.Sum(p => p.CostPrice);
+
+        var finalresult = total - combo.Discount;
+        if (finalresult < totalcost)
+        {
+            throw new InvalidComboException("Combo está abaixo do preço minimo.");
+        }
+        return finalresult;
+    }
+
     public decimal ProfitMargin(Product product)
     {
         decimal margin = product.SellPrice - product.CostPrice;
         return margin;
     }
-    public void AddToCombo(Product product, Combo combo)
+
+
+    public void AddProductToCombo(Product product, Combo combo)
     {
         try
         {
-            if (product.Combo != null)
-            {
-                throw new Errors("Produto já está em um combo");
-            }
-            product.Combo = combo;
-            product.ComboId = combo.Id;            
-            combo.AddProduct(product);
+            combo.AssociateProduct(product);
+            product.AssociateWithCombo(combo);
         }
         catch (Exception)
         {
-            throw new Errors("Impossivel encontrar adicionar o produto. Tente mais tarde ou contate o administrador");
+            throw new InvalidComboException("Impossivel adicionar o produto do combo.");
         }
-
-
     }
-    public void RemoveFromCombo(Product product, Combo combo)
+
+
+    public void RemoveProductFromCombo(Product product, Combo combo)
     {
         try
         {
-            product.Combo = null;
-            product.ComboId = Guid.Empty;
             combo.RemoveProduct(product);
+            product.DesassociateWithCombo();
         }
         catch (Exception)
         {
-            throw new Errors("Impossivel encontrar remover o produto. Tente mais tarde ou contate o administrador");
+            throw new InvalidComboException("Impossivel remover o produto do combo.");
         }
-
     }
+
+
 }

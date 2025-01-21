@@ -2,42 +2,39 @@
 
 public class Combo
 {
-    public Guid Id { get; init; }
+    public Guid IdCombo { get; init; }
     public string Name { get; set; }
     public string Code { get; set; }
     public decimal Discount { get; set; }
-    public List<Product>? ProductsInCombo { get; set; }
+    public ICollection<Product> ProductsInCombo { get; set; }
 
-    public Combo(){ }
+    public Combo()
+    {
+        
+    }
 
     public Combo(string name, string code, decimal discount)
     {
-        Id = Guid.NewGuid();
+        IdCombo = Guid.NewGuid();
         Name = name;
         Code = code;
         Discount = discount;        
     }
-    public Combo(Guid? id, string name, string code, decimal discount, List<Product>? productsInCombo)
+    public Combo(string name, string code, decimal discount, List<Product>? productsInCombo)
     {
-        if (id == null)
-        {
-            Id = Guid.NewGuid();
-        }
-        if (id != null)
-        {
-            Id = (Guid)id;
-        }        
+        IdCombo = Guid.NewGuid();
         Name = name;
         Code = code;
         Discount = discount;
         ProductsInCombo = productsInCombo;
     }
 
-    public void AddProduct(Product product)
+    public void AssociateProduct(Product product)
     {
-        if (ProductsInCombo == null)
+        if(ProductsInCombo == null)
         {
             ProductsInCombo = new List<Product>();
+            ProductsInCombo.Add(product);
         }
         ProductsInCombo.Add(product);
     }
@@ -53,7 +50,7 @@ public class Combo
 
     override public string ToString()
     {
-        return $"Id: {Id}, Name: {Name}, Code: {Code}, Discount: {Discount}, ProductsInCombo: {ProductsInCombo}";
+        return $"Id: {IdCombo}, Name: {Name}, Code: {Code}, Discount: {Discount}, ProductsInCombo: {ProductsInCombo}";
     }
 
     override public bool Equals(object? obj)
@@ -62,13 +59,17 @@ public class Combo
         {
             return false;
         }
-        Combo combo = (Combo)obj;
-        return Id == combo.Id || Name == combo.Name || Code == combo.Code;
+        if(obj is not Combo other)
+        {
+            return false;
+        }
+        
+        return IdCombo == other.IdCombo || Name == other.Name || Code == other.Code;
     }
 
     override public int GetHashCode()
     {
-        return HashCode.Combine(Id, Name, Code);
+        return HashCode.Combine(IdCombo, Name, Code);
     }
 
 }
