@@ -7,54 +7,75 @@ using ProjetoAndre.Domain.Erros;
 using ProjetoAndre.Domain.Services;
 using Serilog;
 
+
 namespace ProjetoAndre.Aplication.Controllers.ComboControllers;
 
 public class ComboBuildController
 {
-    private readonly IComboBuild _comboBuild = new ProductServices();
+    private readonly IComboBuild _comboBuild;
     private readonly ProductUpdate _productUpdate;
     private readonly ComboUpdate _comboUpdate;
+    private List<ProductRequest> _productRequests;
+    private ComboRequest _comboRequest;
 
-    public ComboBuildController(ProductUpdate productUpdate, ComboUpdate comboUpdate)
+    public ComboBuildController(List<ProductRequest> productRequests, ComboRequest comboRequest)
     {
-        _productUpdate = productUpdate;
-        _comboUpdate = comboUpdate;
+        _comboBuild = new ProductServices();
+        _productUpdate = new ProductUpdate();
+        _comboUpdate = new ComboUpdate();
+        _productRequests = productRequests;
+        _comboRequest = comboRequest;
     }
 
-    public bool ComboBuildAdd(List<ProductRequest> productRequestsList, ComboRequest comboRequest)
+    public bool ComboBuildAdd()
     {
-        InternalValidation(productRequestsList, comboRequest);
+        InternalValidation(_productRequests, _comboRequest);
 
-
-        List<Product> productList = ControllerTools<Product, ProductRequest>.RequestToEntityList(productRequestsList);
-        Combo? combo = ControllerTools<Combo, ComboRequest>.RequestToEntity(comboRequest);
+        List<Product> productList = ControllerTools<Product, ProductRequest>.RequestToEntityList(_productRequests);
+        Combo? combo = ControllerTools<Combo, ComboRequest>.RequestToEntity(_comboRequest);
+        if (combo == null)
+        {
+            Log.Error("Erro na passagem de ComboRequest dentro do Controlador");
+            throw new InvalidComboException("Erro na passagem de ComboRequest dentro do Controlador");
+        }
 
         foreach (var product in productList)
         {
             _comboBuild.AddProductToCombo(product, combo);
-            _productUpdate.UpdateProduct(product);
-            _comboUpdate.UpdateCombo(combo);
+            var test = _productUpdate.UpdateProduct(product);
+            var test2 = _comboUpdate.UpdateCombo(combo);
+
+            if (test == false || test2 == false)
+            {
+                Log.Error("Falha ao passar as informações do controlador para a IComboBuild");
+                throw new DataConnectionFailureException("Falha ao passar as informações do controlador para a IComboBuild");
+            }
         }
 
         return true;
     }
 
-    public bool ComboBuildRemove(List<ProductRequest> productRequestsList, ComboRequest comboRequest)
+    public bool ComboBuildRemove()
     {
-        InternalValidation(productRequestsList, comboRequest);
-
-
-        List<Product> productList = ControllerTools<Product, ProductRequest>.RequestToEntityList(productRequestsList);
-        Combo? combo = ControllerTools<Combo, ComboRequest>.RequestToEntity(comboRequest);
-
-
+        InternalValidation(_productRequests, _comboRequest);
+        List<Product> productList = ControllerTools<Product, ProductRequest>.RequestToEntityList(_productRequests);
+        Combo? combo = ControllerTools<Combo, ComboRequest>.RequestToEntity(_comboRequest);
+        if (combo == null)
+        {
+            Log.Error("Erro na passagem de ComboRequest dentro do Controlador");
+            throw new InvalidComboException("Erro na passagem de ComboRequest dentro do Controlador");
+        }
         foreach (var product in productList)
         {
             _comboBuild.RemoveProductFromCombo(product, combo);
-            _productUpdate.UpdateProduct(product);
-            _comboUpdate.UpdateCombo(combo);
+            var test = _productUpdate.UpdateProduct(product);
+            var test2 = _comboUpdate.UpdateCombo(combo);
+            if (test == false || test2 == false)
+            {
+                Log.Error("Falha ao passar as informações do controlador para a IComboBuild");
+                throw new DataConnectionFailureException("Falha ao passar as informações do controlador para a IComboBuild");
+            }
         }
-
         return true;
     }
 

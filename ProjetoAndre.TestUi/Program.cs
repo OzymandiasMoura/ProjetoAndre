@@ -21,10 +21,20 @@ class Program
             Console.WriteLine("Erro ao conectar com o banco de dados");
         }
 
-        var combo3 = new ComboRequest(null, "Combo 4 Latinhas", "C2", 4, null);
+        var combo3 = new ComboRequest(null, "Combo 3 Latinhas", "C1", 2, null);
+        var product1 = new ProductRequest(null, "Cerveja", "12345678", "Skol", 2, 3, "Ambev", "12345678", "1234");
+        var product2 = new ProductRequest(null, "Cerveja", "12345678", "Skol", 2, 3, "Ambev", "12345678", "1234");
+        var product3 = new ProductRequest(null, "Cerveja", "12345678", "Skol", 2, 3, "Ambev", "12345678", "1234");
 
-        ComboDeleteController comboDeleteController = new ComboDeleteController(combo3);
-        comboDeleteController.DeleteComboController();  
+        List<ProductRequest> productRequests = new List<ProductRequest>();
+        productRequests.Add(product1);
+        productRequests.Add(product2);
+        productRequests.Add(product3);
+
+
+
+        ComboBuildController comboBuildController = new ComboBuildController(productRequests, combo3);
+        comboBuildController.ComboBuildRemove();
 
 
 
